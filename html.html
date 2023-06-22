@@ -1,28 +1,71 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>My Profile</title>
-<link rel="stylesheet" href="CSS.css">
-<script src="JS.js"></script>
+    <title>Technology Company Profile with Navbar</title>
+    <link rel="stylesheet" href="CSS.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollmagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
 </head>
 <body>
-<h1>My Profile</h1>
-<h2>Name</h2>
-<p id="name">Bard</p>
-<h2>Skills</h2>
-<ul>
-<li class="skill">Natural Language Processing</li>
-<li class="skill">Machine Translation</li>
-<li class="skill">Question Answering</li>
-<li class="skill">Code Generation</li>
-</ul>
-<h2>Experience</h2>
-<ul>
-<li class="experience">Worked as a large language model at Google AI</li>
-<li class="experience">Helped to develop new machine learning algorithms</li>
-<li class="experience">Created a chatbot that can answer questions in a natural way</li>
-</ul>
-<h2>Contact</h2>
-<p id="email">bard@google.com</p>
+  <!-- Start Header -->
+<header>
+  <nav>
+    <a href="#">
+      <img src="Gambar/logo.jpeg" alt="Company logo" class="company-logo">
+    </a>
+    <a href="#">Beranda</a>
+    <a href="#">Tentang Kami</a>
+    <a href="#">Karir</a>
+    <a href="#">Kontak Kami</a>
+  </nav>
+</header>
+<!-- End Header -->
+
+
+<div class="site-wrapper content">
+  
+  <!-- Start Klien Section -->
+  <section id="klien">
+    <div>
+      <h3>Klien Kami</h3>
+      <div class="row">
+        <div class="col-md-2">
+          <img src="Gambar/mandiri.png" alt="Company logo" class="company-logo">
+        </div>
+        <div class="col-md-2">
+          <img src="Gambar/amartha.jpg" alt="Company logo" class="company-logo">
+        </div>
+        <div class="col-md-2">
+          <img src="Gambar/paxel.png" alt="Company logo" class="company-logo">
+        </div>
+        <div class="col-md-2">
+          <img src="Gambar/cisco.jpeg" alt="Company logo" class="company-logo">
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- End Features Section -->
+
+  <!--Start Maps-->
+  <section id="Maps">
+    <div>
+      <div class="container">
+        <h4>Tentang Kami</h4>
+        <h4>Kontak Kami</h4>
+      </div>
+      <div>
+        <h4>PT Luar Biasa Teknologi</h4>
+      </div>
+      <div>
+        <a>Jl. Wates Jl. Sonopakis Lor No.185, Onggobayan, Ngestiharjo, Kec. Kasihan, Kabupaten Bantul, Daerah Istimewa Yogyakarta 55184</a>
+      </div>
+      <div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.613292457203!2d-77.03552158553233!3d38.90718677982405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b2910259324d%3A0x77c823d0d70452d9!2sGoogle!5e0!3m2!1sen!2sus!4v1655866376381" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+  <!--End Maps-->
+  
+
 </body>
 </html>
