@@ -1,26 +1,16 @@
-function makeProfile() {
-  var profile = document.createElement("div");
-  profile.innerHTML = `
-    <h1>My Profile</h1>
-    <h2>Name</h2>
-    <p>Bard</p>
-    <h2>Skills</h2>
-    <ul>
-      <li>Natural Language Processing</li>
-      <li>Machine Translation</li>
-      <li>Question Answering</li>
-      <li>Code Generation</li>
-    </ul>
-    <h2>Experience</h2>
-    <ul>
-      <li>Worked as a large language model at Google AI</li>
-      <li>Helped to develop new machine learning algorithms</li>
-      <li>Created a chatbot that can answer questions in a natural way</li>
-    </ul>
-    <h2>Contact</h2>
-    <p>bard@google.com</p>
-  `;
-  document.body.appendChild(profile);
+function activateNavbarItem() {
+  var navbar = document.querySelector("nav");
+  var navbarItems = navbar.querySelectorAll("a");
+
+  for (var i = 0; i < navbarItems.length; i++) {
+    navbarItems[i].addEventListener("mouseover", function() {
+      this.classList.add("active");
+    });
+    navbarItems[i].addEventListener("mouseout", function() {
+      this.classList.remove("active");
+    });
+  }
 }
 
-makeProfile();
+activateNavbarItem();
+
