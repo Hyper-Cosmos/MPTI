@@ -1,0 +1,188 @@
+*{
+    margin: 0px;
+}
+
+.navbar{
+    color: #28A57F;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-stl{
+    display: flex;
+    justify-content: space-between;
+}
+
+nav{
+    height: 55px;
+    /* background-color: blue; */
+}
+
+.page1{
+    background-image: url('gambar/homepagewoman.jpg');
+    background-size: 100%;
+    width: 100%;
+    height: 900px;
+    /* background-color: #28A57F; */
+    /* background-size: 500px 400px;
+    background-color: brown; */
+
+    /* background-image: url(gambar/homepagewoman.jpg);
+    
+
+    background-image: url(gambar1.png), url(gambar2.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat; */
+}
+
+/* body{
+    background-image: url("gambar/homepagewoman.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+} */
+
+.navbar-left img {
+    margin-top: 5px;
+    margin-left: 100px;
+    height: 40px; /* Atur ukuran tinggi logo kiri sesuai kebutuhan */
+    margin-right: 10px; /* Beri jarak antara logo kiri dan logo kanan */
+}
+
+
+.navbar-right img {
+    margin-top: 5px;
+    margin-right: 100px;
+    height: 40px; /* Atur ukuran tinggi logo kanan sesuai kebutuhan */
+    margin-left: 10px; /* Beri jarak antara logo kanan dan logo kiri */
+}
+
+/* .logo{
+    width: 50px;
+    height: 50px;
+} */
+
+/* img{
+    width: 100%;
+    height: 100%;
+} */
+
+.judul{
+    font-size: 30px;
+    margin-left: 44%;
+    /* margin-bottom: -100px; */
+    letter-spacing: 2px;
+}
+
+/* hr{
+    border: none;
+    height: 10px;
+    width: 270px;
+    margin: 10px 0;
+    background-color: yellow;
+} */
+
+.yellow-hr {
+    border: none;
+    height: 3px; /* Tinggi garis horizontal yang diperbesar */
+    margin: 10px 0; /* Beri jarak atas dan bawah dari garis horizontal */
+    background-color: yellow; /* Warna kuning untuk garis horizontal */
+    width: 270px;
+}
+
+.hr-page3{
+    width: 210px;
+    background-color: yellow;
+}
+
+.hr-page4{
+    width: 270px;
+    background-color: yellow;
+    margin-left: 39%;
+}
+
+.tombol{
+    width: 100%;
+    height: 210px;
+    margin-top: -110px;
+    outline: dashed 1px black;
+    /* Atur */
+    position: absolute;
+    justify-content: center;
+}
+
+.tbl-chld{
+    margin-left: 220px;
+    width: 160px;
+    height: 210px;
+    border-radius: 25px;
+}
+
+.page2{
+    height: 100%;
+    background-color: #28A57F;
+    /* margin-top: 42%; */
+}
+
+.youngMan{
+    width: 581px;
+    height: 707px;
+    margin-top: 85px;
+    margin-left: 75px;
+    transform: scaleX(-1);
+}
+
+.tentangKami{
+    width: 480px;
+    height: 300px;
+    position: absolute;
+    margin-top: -38%;
+    margin-left: 50%;
+    outline: dashed 1px black;
+    color: white;
+}
+
+.readMore{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.page3{
+    height: 100%;
+    background-color: white;
+    color: #28A57F;
+    text-align: center;
+}
+
+.page4{
+    margin-top: -10px;
+    height: 100%;
+    background-color: pink;
+    color: #28A57F;
+    text-align: center;
+}
+
+.pageLast{
+    width: 500px;
+    height: 100px;
+    background-color: #28A57F;
+}
+
+/* .sertifikasi{
+    margin-top: 10px;
+} */
+
+.afpi{
+    width: 305px;
+    height: 75px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ojk{
+    width: 305px;
+    height: 105px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
