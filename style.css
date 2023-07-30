@@ -22,6 +22,7 @@ nav{
     background-size: 100%;
     width: 100%;
     height: 900px;
+    background-repeat: no-repeat;
     /* background-color: #28A57F; */
     /* background-size: 500px 400px;
     background-color: brown; */
@@ -80,22 +81,17 @@ nav{
     background-color: yellow;
 } */
 
-.yellow-hr {
-    border: none;
-    height: 3px; /* Tinggi garis horizontal yang diperbesar */
-    margin: 10px 0; /* Beri jarak atas dan bawah dari garis horizontal */
-    background-color: yellow; /* Warna kuning untuk garis horizontal */
+.grs {
+    background-color: #F9A602;
     width: 270px;
+    padding: 2px;
 }
 
 .hr-page3{
     width: 210px;
-    background-color: yellow;
 }
 
 .hr-page4{
-    width: 270px;
-    background-color: yellow;
     margin-left: 39%;
 }
 
@@ -103,7 +99,7 @@ nav{
     width: 100%;
     height: 210px;
     margin-top: -110px;
-    outline: dashed 1px black;
+    /* outline: dashed 1px black; */
     /* Atur */
     position: absolute;
     justify-content: center;
@@ -136,7 +132,7 @@ nav{
     position: absolute;
     margin-top: -38%;
     margin-left: 50%;
-    outline: dashed 1px black;
+    /* outline: dashed 1px black; */
     color: white;
 }
 
@@ -158,16 +154,16 @@ nav{
 .page4{
     margin-top: -10px;
     height: 100%;
-    background-color: pink;
+    background-color: white;
     color: #28A57F;
     text-align: center;
 }
 
-.pageLast{
+/* .pageLast{
     width: 500px;
     height: 100px;
     background-color: #28A57F;
-}
+} */
 
 /* .sertifikasi{
     margin-top: 10px;
@@ -185,4 +181,86 @@ nav{
     height: 105px;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.klien{
+    width: 510px;
+    height: 310px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+/* test */
+header{
+    background-color: rebeccapurple;
+}
+
+.kontak-tentang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tentang{
+    padding: 10px;
+}
+
+.kontak{
+    padding: 10px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.alamat-perusahaan {
+    margin-top: 15px;
+}
+
+.perusahaan{
+    color: #28A57F;
+    text-align: center;
+}
+
+.alamat{
+    text-align: center;
+}
+
+.peta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+iframe{
+    margin-top: 25px;   
+}
+
+.sosmed{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.ikon{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.phone-mail{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 922px){
+    .page1, .page2, .page3, .page4, .nav-stl, nav, header{
+        width: 100%;
+    }
 }
