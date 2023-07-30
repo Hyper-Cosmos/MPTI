@@ -37,7 +37,7 @@
         <div class="judul">
             <br>
             <p style="font-family: 'Montserrat';font-size: 42px; ">Our Service <br> We Deliver</p>
-            <hr class="yellow-hr">
+            <hr class="grs">
         </div>
     </div>
 
@@ -53,7 +53,7 @@
 
         <div class="tentangKami">
             <h3>TENTANG KAMI</h3>
-            <HR>
+            <HR class="grs hr-page3">
             <P>
                 Berdiri sejak pada tahun 2021, PT. Luar Biasa Teknologi 
                 merupakan perusahaan Business Process Outsourcing 
@@ -69,7 +69,7 @@
     <div class="page3">
         <br>
         <h1 class="sertifikasi">SERTIFIKASI</h1>
-        <hr class="yellow-hr">
+        <hr class="grs hr-page4">
         <img src="gambar/AFPI.png" class="afpi">
         
 
@@ -79,21 +79,41 @@
         <hr>
         <br>
         <h1>Diawasi</h1>
-        <hr class="yellow-hr">
+        <hr class="grs hr-page4">
         <img src="gambar/OJK.png" class="ojk">
         <br><br>
     </div>
 
     <div class="page4">
+        <hr>
+        <br>
         <h1>KLIEN KAMI</h1>
-        <hr class="yellow-hr">
+        <hr class="grs hr-page4">
+        
+        <img src="gambar/klienKamiAbu.png" class="klien">
+
     </div>
-    
 
-    <script 
-        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-
-    </script>
+    <div id="halaman-kontak"></div>
 
 </body>
 </html>
+
+<script>
+        
+    function fileKontak() {
+        fetch('kontak.php')
+        .then(response => response.text())
+        .then(data => {
+        document.getElementById('halaman-kontak').innerHTML = data;
+        });
+    }
+
+
+    window.onload = function() {
+        fileKontak();
+    };
+
+    // src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+</script>
