@@ -89,9 +89,6 @@ body{
     flex-direction: column;
 }
 
-#galeri .row{
-    padding: 20px;
-}
 
 #galeri h2.judul-galeri{
     color: var(--pr-color);
@@ -108,34 +105,43 @@ body{
     background-color: #F9A602;
 }
 
-.carousel-indicators button.active {
+  .carousel-indicators button.active {
     background-color: #F9A602; 
   }
   
-  /* Warna indikator ketika tidak aktif */
   .carousel-indicators button:not(.active) {
     background-color: black; 
   }
-.carousel-img {
-    max-height: 450px;
-    object-fit: cover;
+  .carousel-inner {
+    height: 450px; 
+    max-width: 750px; 
+    margin: 0 auto; 
   }
   
+  .carousel-inner .carousel-item img {
+    height: 400px;
+    max-width: 700px;
+    display: block;
+    margin: 0 auto; 
+  }
+  .carousel-indicators {
+    transform: scale(0.675);
+  }
+  /* Media queries untuk mode ponsel */
+  @media (max-width: 767px) {
+    .carousel-inner {
+      height: 250px; 
+      max-width: 400px;
+    }
+    .carousel-inner .carousel-item img {
+      height: 200px;
+      max-width: 350px;
+    }
+  }
   .carousel-control-prev,
   .carousel-control-next {
     z-index: 2;
   }
-  
-  .carousel-item img {
-    padding-bottom: 30px;
-  }
-
-  @media (max-width: 767px) {
-    .carousel-img {
-      max-height: 200px;
-    }
-  }
-
 /* SLOGAN */
 .yellow-hr {
     display: inline-block;

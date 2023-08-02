@@ -73,17 +73,8 @@ body{
 .judul{
     font-size: 30px;
     margin-left: 44%;
-    /* margin-bottom: -100px; */
     letter-spacing: 2px;
 }
-
-/* hr{
-    border: none;
-    height: 10px;
-    width: 270px;
-    margin: 10px 0;
-    background-color: yellow;
-} */
 
 .grs {
     background-color: #F9A602;
