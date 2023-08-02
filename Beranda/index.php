@@ -4,42 +4,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
     <link rel="stylesheet" href="../style.css">
-    <title>Document</title>
+
+    <link rel="icon" href="../Assets/img/lbt.png" type="image/x-icon">
+
+    <title>Home</title>
 </head>
 <body>
-    <div>
-        <nav class="nav-stl">
-            <div class="navbar-left">
-                <img src="../Gambar/logo.png" alt="Logo Kiri">
-            </div>
-
-            <div class="nav justify-content-center ">
-                <a class="nav-link navbar active" aria-current="page" href="#">Beranda</a>
-                <a class="nav-link navbar" href="#">Tentang Kami</a>
-                <a class="nav-link navbar" href="#">Layanan</a>
-                <a class="nav-link navbar">Karir</a>
-                <a class="nav-link navbar">Kontak Kami</a>
-            </div>
-
-            <div class="navbar-right">
-                <img src="../Gambar/user.png" alt="Logo Kanan">
-            </div>
-        </nav>
-    </div>
-
-    <div class="page1"> 
-        <!-- page 1 -->
-        <!-- <img src="../Gambar/homepagewoman.jpg" alt=""> -->
-
-        <div class="judul">
-            <br>
-            <p style="font-family: 'Montserrat';font-size: 42px; ">Our Service <br> We Deliver</p>
-            <hr class="grs">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="../Assets/img/lbt.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item mx-3">
+              <a class="nav-link active" aria-current="page" href="">Beranda</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link"  href="../Tentang Kami">Tentang Kami</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Layanan</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Karir</a>
+            </li>
+            <li class="nav-item mx-3">
+              <a class="nav-link" href="#">Kontak Kami</a>
+            </li>
+          </ul>
         </div>
-    </div>
+      </div>
+    </nav>
+    
+    <section id="hero">
+    <img src="../Gambar/homepagewoman.jpg" alt="" class="img-hero">
+        <div class="container h-100">
+            <div class="row h-100 text-center">
+            <p style="font-family: 'Montserrat'; font-size: 42px;">Our Service<br>We Deliver</p>
+            <hr class="grs" style="background-color: white;">
+            </div>
+        </div>
+    </section>
+
+    </section>
 
     <div class="tombol">
         <button class="tbl-chld">test</button>
@@ -95,11 +111,9 @@
     </div>
 
     <div id="halaman-kontak"></div>
-
 </body>
 </html>
 <script>
-        
         function fileKontak() {
             fetch('../kontak.php')
             .then(response => response.text())
@@ -107,8 +121,16 @@
             document.getElementById('halaman-kontak').innerHTML = data;
             });
         }
+        function floating(){
+          fetch('../floating.html')
+            .then(response => response.text())
+            .then(data => {
+            document.getElementById('floating-menu').innerHTML = data;
+            });
+          }
         window.onload = function() {
             fileKontak();
+            floating()
         };
-        // src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+       
     </script>

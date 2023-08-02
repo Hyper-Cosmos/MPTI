@@ -26,16 +26,16 @@
     </div>
 
     <div class="sosmed">
-        <a href="#"> <img src="gambar/instagram.png" alt="instagram" class="ikon"> </a>
-        <a href="#"> <img src="gambar/linkedin.png" alt="linkedin" class="ikon"> </a>
-        <a href="#"> <img src="gambar/facebook.png" alt="facebook" class="ikon"> </a>
+        <a href="#"> <img src="../gambar/instagram.png" alt="instagram" class="ikon"> </a>
+        <a href="#"> <img src="../gambar/linkedin.png" alt="linkedin" class="ikon"> </a>
+        <a href="#"> <img src="../gambar/facebook.png" alt="facebook" class="ikon"> </a>
     </div>
 
     <hr>
 
     <div class="phone-mail">
-        <img src="gambar/phone.png" alt="phone" class="ikon">0274-453053</img>
-        <img src="gambar/mail.png" alt="mail" class="ikon">luarbiasatek@gmail.com</img>
+        <img src="../gambar/phone.png" alt="phone" class="ikon">0274-453053</img>
+        <img src="../gambar/mail.png" alt="mail" class="ikon">luarbiasatek@gmail.com</img>
     </div>
 
     <script 
