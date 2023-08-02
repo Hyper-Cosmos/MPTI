@@ -12,11 +12,12 @@
 
     <!-- Style Css-->
     <script src="https://kit.fontawesome.com/be118125cf.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../Floating/style.css">
 
     <!-- Logo Title Bar-->
 
-    <link rel="icon" href="../Assets/img/lbt.png" type="image/x-icon">
+    <link rel="icon" href="../Gambar/lbt.png" type="image/x-icon">
 
     <title>About Us</title>
   </head>
@@ -25,7 +26,7 @@
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100">
       <div class="container">
         <a class="navbar-brand" href="../Beranda">
-          <img src="../Assets/img/lbt.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
+          <img src="../Gambar/lbt.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -56,7 +57,7 @@
     <!-- Hero Section -->
     <section id="hero">
         <div class="container">
-          <img src="../Assets/img/aboutus.png" alt="" class="position-relative top-0 z-1 img-hero">
+          <img src="../Gambar/aboutus.png" alt="" class="position-relative top-0 z-1 img-hero">
         </div>
     </section>
 
@@ -100,18 +101,18 @@
           </div>
           <div class="carousel-inner">
             <div class="carousel-item active">
-              <a href="../Assets/img/aboutus.png"class="image-link">
-                <img src="../Assets/img/aboutus.png" class="d-block w-100 carousel-img" alt="">
+              <a href="../Gambar/aboutus.png"class="image-link">
+                <img src="../Gambar/aboutus.png" class="d-block w-100 carousel-img" alt="">
               </a>
             </div>
             <div class="carousel-item">
-              <a href="../Assets/img/hero.png"class="image-link">
-                <img src="../Assets/img/hero.png" class="d-block w-100 carousel-img" alt="">
+              <a href="../Gambar/hero.png"class="image-link">
+                <img src="../Gambar/hero.png" class="d-block w-100 carousel-img" alt="">
               </a>
             </div>
             <div class="carousel-item">
-              <a href="../Assets/img/lbt.png"class="image-link">
-                <img src="../Assets/img/lbt.png" class="d-block w-100 carousel-img" alt="">
+              <a href="../Gambar/lbt.png"class="image-link">
+                <img src="../Gambar/lbt.png" class="d-block w-100 carousel-img" alt="">
               </a>
             </div>
           </div>
@@ -225,9 +226,9 @@
   </body>
 </html>
 
-<!-- <script>
+<script>
   function floating(){
-    fetch('../floating.html')
+    fetch('../Floating/floating.html')
       .then(response => response.text())
       .then(data => {
       document.getElementById('floating-menu').innerHTML = data;
@@ -236,4 +237,5 @@
   window.onload = function() {
     floating()
   };
-</script> -->
+</script>
+<script src="../Floating/floating.js"></script>

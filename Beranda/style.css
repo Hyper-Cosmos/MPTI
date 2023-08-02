@@ -1,0 +1,347 @@
+:root{
+    --pr-color : #2C9E7A; 
+    --sc-color : #F9A602;
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.yellow-hr {
+    display: inline-block;
+    width: 15%;
+    border: 1.4px solid;
+    color: var(--sc-color); /* Warna kuning untuk garis horizontal */
+}
+.yellow-hr-abouts{
+    display: inline-block;
+    width: 35%;
+    border: 2px solid;
+    color: var(--sc-color); /* Warna kuning untuk garis horizontal */
+}
+.yellow-hr-sertif{
+    display: inline-block;
+    width: 20%;
+    border: 2px solid;
+    color: var(--sc-color); /* Warna kuning untuk garis horizontal */
+}
+
+*{
+    margin: 0px;
+}
+
+/* Navbar style */
+.navbar{
+    z-index: 3;
+    
+}
+*{
+    z-index: 2;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    font-size: 16px;
+    color: black;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+    color: var(--pr-color);
+}
+
+.nav-link.active{
+    text-decoration: none;
+    position: relative;
+    color: var(--pr-color);
+}
+
+.nav-link.active::after {
+    content: '';
+    position: absolute; 
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px; 
+    background-color: var(--pr-color);
+}
+
+
+
+/* Halaman Beranda : beranda.php */
+/* Halaman 1 */
+#hero .container-fluid {
+    width: 100%;
+    height: 900px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (max-width: 767px) {
+    #hero .container-fluid {
+        max-height: 400px;
+    }
+    .yellow-hr {
+        width: 50%;
+    }
+    .yellow-hr-abouts {
+        width: 50%;
+    }
+    .yellow-hr-sertif {
+        width: 50%;
+    }
+  }
+    @media (max-width: 992px) { 
+        #hero .container-fluid {
+            max-height: 550px;
+        }
+ }
+
+/* content layanan */
+.judul{
+    color: var(--pr-color);
+    font-weight: 700;
+}
+
+.tombol{
+    width: 100%;
+    height: 300px;
+    margin-top: -200px;
+    position: absolute;
+    justify-content: center;
+}
+
+.tbl-chld{
+    width: 240px;
+    height: 300px;
+    border: none;
+    box-shadow: 0 2px 6px var(--pr-color);
+    border-radius: 25px;
+    background-color: white;
+}
+
+.sub-title{
+    color: var(--pr-color);
+    font-weight: 700;
+}
+@media (max-width: 767px) {
+    .tombol {
+      position: relative;
+      top: 0;
+      transform: none;
+      height: auto;
+      margin-top: 20px;
+      padding: 0 20px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+  
+    .tbl-chld {
+      margin-bottom: 20px;
+      max-width: 170px;
+      max-height: 230px;
+    }
+  }
+
+/* about us*/
+#aboutus .container .row{
+    height: 500px;
+}
+#aboutus {
+    background-color: var(--pr-color);
+    padding-top: 80px;
+  }
+
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .content-text {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+  }
+  .content-image {
+    max-width: 100%; 
+    max-height: 100%;
+    overflow: hidden;
+}
+.readMore{
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+  .content-image-elm {
+    width: 100%;
+    height: 600px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transform: scaleX(-1);
+  }
+
+  @media (max-width: 767px) {
+    #aboutus{
+        padding-top: 0;
+    }
+    #aboutus .container {
+      flex-direction: column;
+      max-height: 500px;
+    }
+    #aboutus .container .row{
+        max-height: 300px;
+    }
+    .content-text {
+      text-align: center;
+    }
+    .content-image-elm {
+    display: none;
+    }
+  }
+
+
+/* Sertifikat */
+hr{
+    color: var(--pr-color);
+}
+#sertif{
+    color: var(--pr-color);
+}
+.afpi{
+    width: 305px;
+    height: 75px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.ojk{
+    width: 305px;
+    height: 105px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Halaman 4 */
+
+#section-client .row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.swiper-content{
+    width: 100%;
+    position: relative;
+    height: 100%;
+}
+#section-client .client-item{
+    position: relative;
+    flex: 1 1 33%;
+    min-height: 150px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -1px;
+    margin-top: -1px;
+}
+#section-client .img-client{
+    max-width: 140px;
+    max-height: 130px;
+}
+.hr-page4{
+    margin-left: 39%;
+}
+
+.klien-kami{
+    position:sticky;
+}
+
+.bantuSaku{
+    width: 80%;
+    height: 20%;
+}
+
+.finPlus{
+    width: 50%;
+    height: 27%;
+}
+
+.uatas{
+    width: 40%;
+    height: 50%;
+}
+
+.singaHijau{
+    width: 80%;
+    height: 60%;
+}
+
+.danaRupiah{
+    width: 60%;
+    height: 30%;
+}
+
+
+/* Halaman footer */
+.kontak-tentang {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.tentang{
+    padding: 10px;
+}
+
+.kontak{
+    padding: 10px;
+}
+
+
+
+.alamat-perusahaan {
+    margin-top: 15px;
+}
+
+.perusahaan{
+    color: #28A57F;
+    text-align: center;
+}
+
+.alamat{
+    text-align: center;
+}
+
+.peta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+iframe{
+    margin-top: 25px;   
+}
+
+.sosmed{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.ikon{
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+
+.phone-mail{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
