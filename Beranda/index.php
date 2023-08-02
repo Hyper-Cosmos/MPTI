@@ -15,35 +15,37 @@
 </head>
 <body>
     <!-- Navbar -->
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100">
       <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="../Beranda">
           <img src="../Assets/img/lbt.png" alt="" width="50" height="50" class="d-inline-block align-text-top">
         </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav mx-auto">
             <li class="nav-item mx-3">
-              <a class="nav-link active" aria-current="page" href="">Beranda</a>
+              <a class="nav-link active" aria-current="page"  href="">Beranda</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link"  href="../Tentang Kami">Tentang Kami</a>
+              <a class="nav-link" href="../Tentang Kami/">Tentang Kami</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Layanan</a>
+              <a class="nav-link"  href="../Layanan/">Layanan</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Karir</a>
+              <a class="nav-link" href="../Karir/">Karir</a>
             </li>
             <li class="nav-item mx-3">
-              <a class="nav-link" href="#">Kontak Kami</a>
+              <a class="nav-link" href="../Kontak Kami/">Kontak Kami</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- End Nav Bar-->
     
     <section id="hero">
     <img src="../Gambar/homepagewoman.jpg" alt="" class="img-hero">
