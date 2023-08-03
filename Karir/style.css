@@ -7,8 +7,8 @@
 }
 
 a{
-  text-decoration: none;
-  color: #000;
+  text-decoration: none !important;
+  color: #000 !important;
 }
 
 /* Navbar style */
@@ -159,42 +159,81 @@ a{
 
 
 /* FOOTER */
+hr{
+  color: var(--pr-color);
+}
+a{
+  text-decoration: none !important;
+  color: #000 !important;
+}
 .kontak-tentang {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .kontak-tentang .row {
-    flex-wrap: wrap;
-  }
-  
-  .kontak-tentang .col-md-2 {
-    display: flex;
-    justify-content: center;
-  }
-  
-  /* Tambahkan media query untuk layar dengan lebar maksimum 767px (ponsel) */
-  @media (max-width: 767px) {
-    .kontak-tentang .row {
-      justify-content: center; /* Tengahkan elemen pada tampilan ponsel */
-    }
-    .kontak-tentang .col-md-2 {
-      width: 50%; /* Set setengah lebar untuk kolom pada tampilan ponsel */
-    }
-  }
-  .kami-pg{
-    color: var(--pr-color);
-    font-weight: 500;
-  }
-  a{
-    text-decoration: none !important;
-  }
-  
-  /* Aturan untuk mode desktop (lebar layar lebih dari 767px) */
-  @media (min-width: 768px) {
-    .kontak-tentang .col-md-2 {
-      width: auto; /* Set lebar otomatis untuk kolom pada tampilan desktop */
-    }
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
 
+.tentang{
+  padding: 10px;
+}
+
+.kontak{
+  padding: 10px;
+}
+
+
+.alamat-perusahaan {
+  margin-top: 15px;
+}
+
+.perusahaan{
+  color: #28A57F;
+  text-align: center;
+}
+
+.alamat{
+  text-align: center;
+}
+
+.peta{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.img-peta {
+  max-width: 70%;
+  height: 355px; /* Sesuaikan tinggi yang Anda inginkan */
+}
+
+/* Media query untuk layar dengan lebar maksimum 767px (ponsel) */
+@media (max-width: 767px) {
+  .img-peta {
+    height: 200px; /* Sesuaikan tinggi yang Anda inginkan untuk mode ponsel */
   }
-  
+  #hero  img{
+      min-height: 250px;
+  }
+}  
+iframe{
+  margin-top: 25px;   
+}
+
+.sosmed{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.ikon{
+  width: 25px;
+  height: 25px;
+  margin-left: 10px;
+}
+
+.phone-mail{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+}

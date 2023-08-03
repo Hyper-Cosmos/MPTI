@@ -6,10 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
      <!-- Style Css-->
-     <script src="https://kit.fontawesome.com/be118125cf.js" crossorigin="anonymous"></script>
-     <link rel="stylesheet" href="../Floating/style.css">
+     <script src="https://kit.fontawesome.com/be118125cf.js" crossorigin="anonymous"></script> 
     <link rel="stylesheet" href="../Karir/style.css" type="text/css">
-    <title>Luar Biasa Teknologi</title>
+    <title>Karir</title>
     <link rel="icon" href="../Gambar/lbt.png" type="image/x-icon">
 </head>
 <body>
@@ -44,17 +43,15 @@
       </div>
     </nav>
     <!-- End Nav Bar-->
-
     <!-- Career-->
-    <section id="pic">
+    <div id="pic">
       <div class="image-container">
         <div>
           <img src="../Gambar/carier.jpg" alt="" class="position-relative top-0 z-1 img-hero">
         </div>
       </div> 
-    </section>
-
-    <section id="list">
+    </div>
+    <div id="list">
       <div class="box m-4">
         <div class="row my-4">
           <div class="col-12 text-center">
@@ -80,61 +77,22 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- End Career-->
-    <div id="floating-menu"></div>
-    <!-- Footer-->
+    </div>
     <footer>
-        <div class="container mt-3">
-          <div class="kontak-tentang">
-            <div class="row">
-              <div class="col-md-2 text-center">
-                <a href="#"> <p class="kami-pg">Tentang Kami</p> </a>
-              </div>
-              <div class="col-md-2 text-center">
-                <a href="#"> <p class="kami-pg">Kontak Kami</p> </a>
-              </div>
-            </div>
-          </div>
-          <div class="alamat-perusahaan text-center">
-              <p class="perusahaan">PT Luar Biasa Teknologi</p>
-              <p class="alamat">Jl. Wates Jl. Sonopakis Lor No.185, <br> Onggobayan, Ngestiharjo, Kec. <br> Kasihan, Kabupaten Bantul,<br>  Daerah Istimewa Yogyakarta 55184</p>
-          </div>
-      
-          <div class="peta text-center">
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3952.9010580937593!2d110.33064801058373!3d-7.80029909218743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7a57b144f4e4f3%3A0xec833a1a245fd6a0!2sPT.%20Luar%20Biasa%20Teknologi!5e0!3m2!1sid!2sid!4v1690736130734!5m2!1sid!2sid" width="650" height="355" style="border:0;" allowfullscreen="" class="img-peta" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-          </div>
-        </div>
-          <div class="sosmed text-center">
-              <a href="#"> <img src="gambar/instagram.png" alt="instagram" class="ikon"> </a>
-              <a href="#"> <img src="gambar/linkedin.png" alt="linkedin" class="ikon"> </a>
-              <a href="#"> <img src="gambar/facebook.png" alt="facebook" class="ikon"> </a>
-          </div>
-      
-          <hr>
-      
-          <div class="phone-mail text-center">
-              <img src="gambar/phone.png" alt="phone" class="ikon">0274-453053</img>
-              <img src="gambar/mail.png" alt="mail" class="ikon">luarbiasatek@gmail.com</img>
-          </div>
-      
-          <script 
-              src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
-          </script>
-        
-      </footer>
-</body>
-
-<script>
-  function floating(){
-    fetch('../Floating/floating.html')
+      <div id="halaman-kontak"></div>
+    </footer>
+  </body>
+</html>
+<script>   
+  function fileKontak() {
+      fetch('../Kontak/kontak.php')
       .then(response => response.text())
       .then(data => {
-      document.getElementById('floating-menu').innerHTML = data;
+      document.getElementById('halaman-kontak').innerHTML = data;
       });
   }
   window.onload = function() {
-    floating()
+      fileKontak();
   };
 </script>
-<script src="../Floating/floating.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
