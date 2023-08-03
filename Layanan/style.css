@@ -1,41 +1,103 @@
+:root{
+  --pr-color : #2C9E7A; 
+  --sc-color : #F9A602;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
 *{
     margin: 0px;
   }
+ 
+/* Navbar style */
+.navbar{
+  z-index: 3;
   
-  /* NAVBAR */
-  .navbar{
-    color: #28A57F;
-    display: flex;
-    justify-content: space-between;
-  }
-  .nav-stl{
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  nav{
-    height: 55px;
-    /* background-color: blue; */
-  }
-  
-  .navbar-left img {
-    margin-top: 5px;
-    margin-left: 100px;
-    height: 40px; /* Atur ukuran tinggi logo kiri sesuai kebutuhan */
-    margin-right: 10px; /* Beri jarak antara logo kiri dan logo kanan */
-  }
-  
-  
-  .navbar-right img {
-    margin-top: 5px;
-    margin-right: 100px;
-    height: 40px; /* Atur ukuran tinggi logo kanan sesuai kebutuhan */
-    margin-left: 10px; /* Beri jarak antara logo kanan dan logo kiri */
-  }
+}
+*{
+  z-index: 2;
+}
+
+.navbar-light .navbar-nav .nav-link{
+  font-size: 16px;
+  color: black;
+}
+
+.navbar-light .navbar-nav .nav-link.active{
+  color: var(--pr-color);
+}
+
+.nav-link.active{
+  text-decoration: none;
+  position: relative;
+  color: var(--pr-color);
+}
+
+.nav-link.active::after {
+  content: '';
+  position: absolute; 
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px; 
+  background-color: var(--pr-color);
+}
 
 
   /* SERVICES */
-  .image-container {
+
+  /* Styling untuk section */
+#pic {
+  position: relative;
+}
+
+/* Styling untuk gambar yang akan nyangkut */
+.image-container {
+  position: relative;
+}
+
+.img-hero {
+  width: 100%;
+  height: auto;
+}
+
+/* Styling untuk box yang nyangkut di antara gambar */
+.box1,
+.box2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 0.8); /* Atur warna latar belakang box */
+  padding: 20px; /* Atur padding sesuai kebutuhan */
+  max-width: 90%; /* Atur lebar maksimum box sesuai kebutuhan */
+  border-radius: 8px; /* Tambahkan border-radius untuk membuat box berbentuk persegi */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Tambahkan efek bayangan pada box */
+  z-index: 2; /* Mengatur urutan tampilan box di atas gambar */
+  color: #000; /* Atur warna teks dalam box */
+}
+
+/* Aturan untuk box1 dan box2 pada mode responsif */
+@media (max-width: 767px) {
+  .box1,
+  .box2 {
+    width: 90%; /* Lebar box pada tampilan ponsel */
+    max-width: 100%; /* Atur lebar maksimum sesuai kebutuhan */
+    font-size: 14px; /* Ukuran teks pada tampilan ponsel */
+  }
+}
+
+/* Styling khusus untuk box1 */
+.box1 {
+  top: 25%; /* Tentukan posisi vertikal box1 di antara image-container pertama dan kedua */
+}
+
+/* Styling khusus untuk box2 */
+.box2 {
+  top: 75%; /* Tentukan posisi vertikal box2 di
+
+  /* .image-container {
     width: 100%;
     height: 100%;
     position: relative;
@@ -64,44 +126,44 @@
   .box1 {
     position: absolute;
     justify-content: center;
-    top: 50%; /* Place the container vertically in the middle */ 
+    top: 50%; 
     margin-top: 75px;
     margin-left: 500px;
-    transform: translate(-50%, -50%); /* Center the container */
-    width: 500px; /* Set the width of the container as desired */
-    height: 540px; /* Set the height of the container as desired */
+    transform: translate(-50%, -50%); 
+    width: 500px; 
+    height: 540px; 
     background-color: rgba(255, 255, 255); 
-    border: 5px solid #3CA795; /* Add a border to the box */
-    border-radius: 8px; /* Add rounded corners to the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/* Set the container background color with transparency */
+    border: 5px solid #3CA795; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   .box2 {
     position: absolute;
     justify-content: center;
-    top: 50%; /* Place the container vertically in the middle */ 
+    top: 50%; 
     margin-top: 900px;
     margin-left: 1400px;
-    transform: translate(-50%, -50%); /* Center the container */
-    width: 500px; /* Set the width of the container as desired */
-    height: 520px; /* Set the height of the container as desired */
+    transform: translate(-50%, -50%);
+    width: 500px; 
+    height: 520px; 
     background-color: rgba(255, 255, 255); 
-    border: 5px solid #3CA795; /* Add a border to the box */
-    border-radius: 8px; /* Add rounded corners to the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/* Set the container background color with transparency */
+    border: 5px solid #3CA795; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
   .box3 {
     position: absolute;
     justify-content: center;
-    top: 50%; /* Place the container vertically in the middle */ 
+    top: 50%; 
     margin-top: 1780px;
     margin-left: 500px;
-    transform: translate(-50%, -50%); /* Center the container */
-    width: 500px; /* Set the width of the container as desired */
-    height: 540px; /* Set the height of the container as desired */
-    background-color: rgba(255, 255, 255); border: 5px solid #3CA795; /* Add a border to the box */
-    border-radius: 8px; /* Add rounded corners to the box */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);/* Set the container background color with transparency */
-  }
+    transform: translate(-50%, -50%); 
+    width: 500px;
+    height: 540px; 
+    background-color: rgba(255, 255, 255); border: 5px solid #3CA795; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  } */
 
 
   /* FOOTER */

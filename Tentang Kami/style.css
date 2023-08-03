@@ -20,11 +20,11 @@ body{
 
 .navbar-light .navbar-nav .nav-link{
     font-size: 16px;
-    color: black;
+    color: black !important;
 }
 
 .navbar-light .navbar-nav .nav-link.active{
-    color: var(--pr-color);
+    color: var(--pr-color) !important;
 }
 
 .nav-link.active{
@@ -177,7 +177,7 @@ body{
     background-color: var(--sc-color); /* Warna garis horizontal kuning */
     transform: translateY(-50%);
   }
-  .small-screen-line {
+  #slogan .small-screen-line {
     display: none; /* Sembunyikan garis pada tampilan desktop */
     width: 40%;
     height: 2px;
@@ -196,8 +196,8 @@ body{
     .yellow-hr{
         width: 30%;
     }
-    .small-screen-line {
-        display: block; 
+    #slogan .small-screen-line {
+        display: block;
       }
   }
 
@@ -249,7 +249,7 @@ body{
     font-weight: 500;
   }
   a{
-    text-decoration: none;
+    text-decoration: none !important; 
   }
   
   /* Aturan untuk mode desktop (lebar layar lebih dari 767px) */

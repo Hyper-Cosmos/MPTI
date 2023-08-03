@@ -174,7 +174,7 @@
 <script>
         
     function fileKontak() {
-        fetch('../Kontak/kontak.html')
+        fetch('../Kontak/kontak.php')
         .then(response => response.text())
         .then(data => {
         document.getElementById('halaman-kontak').innerHTML = data;
