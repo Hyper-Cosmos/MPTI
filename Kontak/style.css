@@ -1,5 +1,6 @@
 :root{
     --pr-color : #2C9E7A;
+    --sc-color: #F9A602;
 }
 
 body{
@@ -12,29 +13,46 @@ a{
 a:hover {
     color: var(--pr-color)
 }
-.navbar{
-    z-index: 3;
-}
-*{
-    z-index: 2;
-}
 
-.navbar-light .navbar-nav .nav-link{
+/* Navbar style */
+#mainNavbar .navbar{
+    z-index: 3;
+    
+  }
+  *{
+    z-index: 2;
+  }
+  
+#mainNavbar .nav-link{
+    position: relative;
     font-size: 16px;
     color: black;
-}
-
-.navbar-light .navbar-nav .nav-link.active{
+  }
+  
+  #mainNavbar .nav-link:hover::after {
+    content: '';
+    position: absolute; 
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px; 
+    background-color: var(--sc-color);
+  }
+  
+  #mainNavbar .nav-link.active{
     color: var(--pr-color);
-}
-
-.nav-link.active{
+  }
+  #mainNavbar a:hover{
+    color: var(--sc-color);
+  }
+  
+  #mainNavbar .nav-link.active{
     text-decoration: none;
     position: relative;
     color: var(--pr-color);
-}
-
-.nav-link.active::after {
+  }
+  
+  #mainNavbar .nav-link.active::after {
     content: '';
     position: absolute; 
     bottom: -4px;

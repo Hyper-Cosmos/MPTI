@@ -6,35 +6,45 @@
   margin: 0px;
 }
 
-a{
-  text-decoration: none !important;
-  color: #000 !important;
-}
-
 /* Navbar style */
-.navbar{
+#mainNavbar .navbar{
   z-index: 3;
+  
 }
 *{
   z-index: 2;
 }
 
-.navbar-light .navbar-nav .nav-link{
+#mainNavbar .nav-link{
+  position: relative;
   font-size: 16px;
-  color: black !important;
+  color: black;
 }
 
-.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link{
-  color: var(--pr-color) !important;
+#mainNavbar .nav-link:hover::after {
+  content: '';
+  position: absolute; 
+  bottom: -4px;
+  left: 0;
+  right: 0;
+  height: 2px; 
+  background-color: var(--sc-color);
 }
 
-.nav-link.active{
+#mainNavbar .nav-link.active{
+  color: var(--pr-color);
+}
+#mainNavbar a:hover{
+  color: var(--sc-color);
+}
+
+#mainNavbar .nav-link.active{
   text-decoration: none;
   position: relative;
   color: var(--pr-color);
 }
 
-.nav-link.active::after {
+#mainNavbar .nav-link.active::after {
   content: '';
   position: absolute; 
   bottom: -4px;
@@ -164,7 +174,7 @@ hr{
 }
 a{
   text-decoration: none !important;
-  color: #000 !important;
+  color: #000;
 }
 .kontak-tentang {
   display: flex;

@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.min.css">
     <!-- Font Google-->
 
@@ -22,6 +22,7 @@
   </head>
   <body>
     <!-- Navbar -->
+    <div id="mainNavbar">
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent w-100">
       <div class="container">
         <a class="navbar-brand" href="../Beranda">
@@ -51,12 +52,13 @@
         </div>
       </div>
     </nav>
+    </div>
     <!-- End Nav Bar-->
 
     <!-- Hero Section -->
     <section id="hero">
         <div class="container">
-          <img src="../Gambar/aboutus.png" alt="" class="position-relative top-0 z-1 img-hero">
+          <img src="../Gambar/aboutus.png" alt="" class="position-relative top-0 z-1 img-hero h-100">
         </div>
     </section>
 
@@ -178,7 +180,7 @@
       <div id="halaman-kontak"></div>  
     </footer>
   
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" ></script>
   <!-- BaguetteBox JS -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.11.1/baguetteBox.js"></script>
 
@@ -207,8 +209,6 @@
 </script>
 <script src="../Floating/floating.js"></script>
 <script src="https://kit.fontawesome.com/be118125cf.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-
 <script>
     function fileKontak() {
         fetch('../Kontak/kontak.php')
