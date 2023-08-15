@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
     <title>PT Luar Biasa Teknologi</title>
-    <link rel="stylesheet" href="../Kontak/style.css" type="text/css">
+    <link rel="stylesheet" href="MPTI/Kontak/style.css" type="text/css">
 </head>
 <body>
     <hr>
     <div class="kontak-tentang">
-        <a href="../Tentang Kami"> <p class="tentang">Tentang Kami</p> </a>
-        <a href="../Kontak Kami"> <p class="kontak">Kontak Kami</p> </a>
+        <a href="about-us"> <p class="tentang">Tentang Kami</p> </a>
+        <a href="contact-us"> <p class="kontak">Kontak Kami</p> </a>
     </div>
 
     <div class="alamat-perusahaan">
-        <p class="perusahaan">PT Luar Biasa Teknologi</p>
-        <p class="alamat">Jl. Wates No.185, <br> Onggobayan, Ngestiharjo, Kec. <br> Kasihan, Kabupaten Bantul,<br>  Daerah Istimewa Yogyakarta 55184</p>
+        <p class="perusahaan">{{$perusahaan->nama_perusahaan}}</p>
+        <p class="alamat">{{$kontak->alamat}}</p>
     </div>
 
     <div class="peta text-center align-content-center">
@@ -21,16 +21,16 @@
     </div>
 
     <div class="sosmed">
-        <a href="#"> <img src="../Gambar/instagram.png" alt="instagram" class="ikon"> </a>
-        <a href="#"> <img src="../Gambar/linkedin.png" alt="linkedin" class="ikon"> </a>
-        <a href="#"> <img src="../Gambar/facebook.png" alt="facebook" class="ikon"> </a>
+        <a href="#"> <img src="MPTI/Gambar/instagram.png" alt="instagram" class="ikon"> </a>
+        <a href="#"> <img src="MPTI/Gambar/linkedin.png" alt="linkedin" class="ikon"> </a>
+        <a href="#"> <img src="MPTI/Gambar/facebook.png" alt="facebook" class="ikon"> </a>
     </div>
 
     <hr>
 
     <div class="phone-mail">
-        <img src="../Gambar/phone.png" alt="phone" class="ikon">0274-453053</img>
-        <img src="../Gambar/mail.png" alt="mail" class="ikon"> luarbiasatek@gmail.com</img>
+        <img src="MPTI/Gambar/phone.png" alt="phone" class="ikon">0274-453053</img>
+        <img src="MPTI/Gambar/mail.png" alt="mail" class="ikon"> luarbiasatek@gmail.com</img>
     </div>
 
     <script 
